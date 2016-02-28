@@ -3,6 +3,7 @@ require 'spec_helper'
 describe IssueChecker do
   subject { IssueChecker::IssueChecker.new }
 
+  it { is_expected.to respond_to :octokit }
   it { is_expected.to respond_to :run }
 
   it 'has a version number' do

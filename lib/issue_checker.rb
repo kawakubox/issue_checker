@@ -1,7 +1,10 @@
 require "issue_checker/version"
+require 'octokit'
 
 module IssueChecker
   class IssueChecker
+    attr_reader :octokit
+
     class << self
       # Set configuration options using block
       def configure
