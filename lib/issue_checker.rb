@@ -15,6 +15,10 @@ module IssueChecker
         @configuration ||= Configuration.new
       end
     end
+
+    def run
+      # TODO implements here.
+    end
   end
 
   # Configuration for IssueChecker
