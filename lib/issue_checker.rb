@@ -19,6 +19,13 @@ module IssueChecker
       end
     end
 
+    def initialize
+      @octokit = Octokit::Client.new(
+        login: IssueChecker.configuration.login,
+        password: IssueChecker.configuration.password
+      )
+    end
+
     def run
       # TODO implements here.
     end

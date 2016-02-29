@@ -24,4 +24,9 @@ describe IssueChecker do
       expect(subject.password).to eq 'p@ssw0rd'
     end
   end
+
+  describe 'initialize' do
+    subject { IssueChecker::IssueChecker.new }
+    it { expect(subject.octokit).not_to be_nil }
+  end
 end
